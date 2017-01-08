@@ -6,6 +6,7 @@
   .main-content {
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   .entry {
@@ -16,8 +17,25 @@
   .entry-body {
     display: none;
   }
+
+  .entry-title h2 {
+    border-bottom: none;
+  }
  
   .entry-footer {
     display: none;
+  }
+
+  .entry-tags {
+    display: none;
+  }
+
+  .index-entry-footer {
+    display: none;
+  }
+
+  .sidebar {
+    padding: 10px 10px;
+    width: 100%;
   }
 }

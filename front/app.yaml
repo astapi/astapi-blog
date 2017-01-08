@@ -2,7 +2,6 @@ application: astapi-blog-project
 runtime: go
 api_version: go1
 version: 1
-module: front
 
 handlers:
 - url: /favicon.ico
