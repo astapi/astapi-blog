@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.clear {
+  clear: left;
+}
+
+.header {
+  color: #FFFFFF;
+  background-color: #5f5f5f;
+  padding: 20px 0;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.header h1 a {
+  text-decoration: none;
+}
+
+.header h1 a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 10px;
+  width: 80%;
+  float: left;
+}
+
+.entry {
+  background-color: #FFFFFF;
+  margin: 20px 0px 100px 0px;
+  padding: 20px;
+  border-bottom: 1px solid #5f5f5f;
+}
+
+.entry-title h2 {
+  margin-top: 0px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #5f5f5f;
+}
+
+.entry-title a {
+  text-decoration: none;
+  color: #5f5f5f;
+}
+
+.entry-tags {
+  border-bottom: 1px solid #5f5f5f;
+  overflow: hidden;
+}
+
+.entry-tags ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.entry-tags li {
+  float: left;
+  margin: 5px 10px;
+  padding: 4px;
+} 
+
+.tag {
+  color: white;
+  background-color: #26D4CE;
+  border-radius: 5px;
+}
+
+.entry-body {
+  margin: 20px 20px;
+  clear: left;
+}
+
+.entry-footer {
+  margin: 0px 20px;
+}
+
+.sidebar {
+  padding-top: 100px;
+  margin-right: 5px;
+  float: left;
+  width: 19%;
+}
+
+.profile-info {
+  border-bottom: 1px solid #5f5f5f;
+}
+
+.footer {
+  background-color: #5f5f5f;
+}
+
+.footer p {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.fa-tag {
+  margin-right: 3px;
+}

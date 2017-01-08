@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>エントリー新規登録</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+<form action="/admin/entry/save/" method="post">
+  <p>タイトル<input type="text" name="title"></p>
+  <p>tags(,区切り)<input type="text" name="tags"></p>
+  <textarea rows="20" cols="100" name="body"></textarea>
+  <input type="submit" value="登録">
+</form>
+</body>
+</html>

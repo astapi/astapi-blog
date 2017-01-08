@@ -1,0 +1,22 @@
+application: astapi-blog-project
+runtime: go
+api_version: go1
+version: 1
+module: front
+
+handlers:
+- url: /favicon.ico
+  mime_type: image/x-icon
+  static_files: public/favicon.ico
+  upload: public/favicon.ico
+
+- url: /stylesheets
+  mime_type: text/css
+  static_dir: stylesheets
+
+- url: /scripts
+  mime_type: text/javascript
+  static_dir: public/scripts
+
+- url: /.*
+  script: _go_app

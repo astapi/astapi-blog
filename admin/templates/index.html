@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/mark-down.css" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="main-content">
+    <ul>
+    {{range .}}
+    <li>{{.Entry.Title}}</li>
+    {{end}}
+    </ul>
+  </div>
+  <div class="footer clear">
+    <p>© 2017 astapi.me</p>
+  </div>
+</body>
+</html>

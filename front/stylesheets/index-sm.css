@@ -1,0 +1,23 @@
+@media(max-width: 670px) {
+  body {
+    background-color: white;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .entry {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .entry-body {
+    display: none;
+  }
+ 
+  .entry-footer {
+    display: none;
+  }
+}
