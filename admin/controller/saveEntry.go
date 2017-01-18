@@ -72,7 +72,7 @@ func initCreatedAt(param string) (time.Time, error) {
 	if param == "" {
 		return time.Now(), nil
 	}
-	const format = "2006/01/02 03:04"
+	const format = "2006/01/02 15:04"
 	ret, err := time.Parse(format, param)
 	return ret, err
 }
