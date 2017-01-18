@@ -9,8 +9,18 @@
 </head>
 <body>
 <form action="/admin/entry/save/" method="post">
-  <p>タイトル<input type="text" name="title"></p>
-  <p>tags(,区切り)<input type="text" name="tags"></p>
+  <div>
+    <label>タイトル</label>
+    <input type="text" name="title">
+  </div>
+  <div>
+    <label>tags(,区切り)</label>
+    <input type="text" name="tags">
+  </div>
+  <div>
+    <label>作成日時(空で現在時刻、format: "YYYY/MM/DD HI:MM" )</label>
+    <input type="text" name="createdAt">
+  </div>
   <textarea rows="20" cols="100" name="body"></textarea>
   <input type="submit" value="登録">
 </form>

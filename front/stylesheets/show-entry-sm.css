@@ -6,6 +6,7 @@
   .main-content {
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   .entry {
@@ -18,5 +19,10 @@
   }
  
   .entry-footer {
+  }
+
+  .sidebar {
+    padding: 10px 10px;
+    width: 100%;
   }
 }

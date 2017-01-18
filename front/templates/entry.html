@@ -9,7 +9,10 @@
    <div class="entry-tags">
      <ul>
        {{range .Entry.Tags}}
-       <li class="tag"><i class="fa fa-tag" aria-hidden="true"></i>{{.}}</li>
+       <li class="tag">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        <a href="/entry/tag/{{.}}">{{.}}</a>
+       </li>
        {{end}}
      </ul>
    </div>
