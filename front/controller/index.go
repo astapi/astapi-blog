@@ -23,7 +23,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	query := ds.NewQuery("Entry")
 
 	var entries []model.Entry
-	keys, err := query.Order("CreatedAt").GetAll(ctx, &entries)
+	keys, err := query.Order("-CreatedAt").GetAll(ctx, &entries)
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 	}
