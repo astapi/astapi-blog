@@ -27,7 +27,6 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 	}
-	//[/Entry,4889528208719872 /Entry,6015428115562496 /Entry,6296903092273152]
 
 	var es []Entry
 	for i := 0; len(entries) > i; i++ {
@@ -39,7 +38,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	}
 
 	index := Indexa{
-		Title:   "あすたぴのブログ",
+		Title:   "One By One",
 		Entries: es,
 	}
 

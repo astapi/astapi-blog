@@ -10,19 +10,12 @@
   }
 
   .entry {
-    margin: 0;
+    width: 90%;
+    margin: 5%;
     padding: 5px;
   }
 
   .entry-body {
     margin: 0 5px;
-  }
- 
-  .entry-footer {
-  }
-
-  .sidebar {
-    padding: 10px 10px;
-    width: 100%;
   }
 }

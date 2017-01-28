@@ -4,33 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{.Title}}</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
   <link rel="stylesheet" href="/stylesheets/index.css" type="text/css">
   <link rel="stylesheet" href="/stylesheets/index-sm.css" type="text/css">
   <link rel="stylesheet" href="/stylesheets/mark-down.css" type="text/css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-  {{template "header" .}}
-  <div class="main-content">
+  <header>
+    <div>
+      <a href="/"><h1>One By One</h1></a>
+    </div>
+    <div class="menu">
+      <ul class="menu-list cf">
+        <li><a href="/about/"><i class="fa fa-user fa-2" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/astapi"><i class="fa fa-twitter-square fa-2" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="main-content cf">
+    <ul class="entry-list">
     {{range .Entries}}
-      {{template "entry" .}}
+    <li class="entry">
+      <div class="entry-date">{{.Entry.FormatCreatedAt}}</div>
+      <div class="entry-tags">
+        <i class="fa fa-tags fa-2" aria-hidden="true"></i>
+        {{if .Entry.Tags}}
+        <ul>
+          {{range .Entry.Tags}}
+          <a href="/entry/tag/{{.}}"><li class="tag">{{.}}</li></a>
+          {{end}}
+        </ul>
+        {{end}}
+      </div>
+      <div class="entry-title">
+        <a href="/entry/{{.DsKey.IntID}}"><h2>{{.Entry.Title}}</h2></a>
+      </div>
+    </li>
     {{end}}
-  </div>
-  <div class="sidebar">
-    <div class="profile">
-      <p class="profile-info">
-        <i class="fa fa-info" aria-hidden="true"></i>このブログについて
-      </p>
-      <p><a href="https://twitter.com/astapi">あすたぴです。</a></p>
-      <p>プログラミングについてとか書きます。</p>
-    </div>
-    <div class="tag-list">
-      <p class="tags-info">
-        <i class="fa fa-tags" aria-hidden="true"></i>Tags
-      </p>
-    </div>
-    <div class="ad"></div>
   </div>
   <div class="footer clear">
     <p>© 2017 astapi.me</p>

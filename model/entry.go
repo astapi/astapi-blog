@@ -22,5 +22,5 @@ func (e *Entry) ToHtml() string {
 }
 
 func (e Entry) FormatCreatedAt() string {
-	return e.CreatedAt.Format("2006-01-02 15:04")
+	return e.CreatedAt.Format("2006.01.02")
 }

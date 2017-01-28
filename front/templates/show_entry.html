@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{.Entry.Title}} - あすたぴのブログ</title>
+  <title>{{.Entry.Title}} - One by One</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
   <link rel="stylesheet" href="../stylesheets/entry.css" type="text/css">
   <link rel="stylesheet" href="../stylesheets/show-entry-sm.css" type="text/css">
@@ -14,13 +15,6 @@
   {{template "header" .}}
   <div class="main-content">
     {{template "entry" .}}
-  </div>
-  <div class="sidebar">
-    <div class="profile">
-      <p class="profile-info">このブログについて</p>
-      <p><a href="https://twitter.com/astapi">あすたぴです。</a></p>
-      <p>プログラミングについてとか書きます。</p>
-    </div>
   </div>
   <div class="footer clear">
     <p>© 2017 astapi.me</p>

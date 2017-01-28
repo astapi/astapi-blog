@@ -34,7 +34,7 @@ func ShowEntry(w http.ResponseWriter, r *http.Request) {
 		"safe": func(text string) template.HTML { return template.HTML(text) },
 	}
 	se := showEntry{
-		Title: "あすたぴのブログ",
+		Title: "One By One",
 		Entry: e,
 		DsKey: k,
 	}

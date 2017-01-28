@@ -7,22 +7,17 @@
      </h2>
    </div>
    <div class="entry-tags">
+     <i class="fa fa-tags fa-2" aria-hidden="true"></i>
+     {{if .Entry.Tags}}
      <ul>
        {{range .Entry.Tags}}
-       <li class="tag">
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        <a href="/entry/tag/{{.}}">{{.}}</a>
-       </li>
+       <a href="/entry/tag/{{.}}"><li class="tag">{{.}}</li></a>
        {{end}}
      </ul>
+     {{end}}
    </div>
    <div class="entry-body markdown-body">
      <div>{{.Entry.ToHtml | safe }}</div>
-   </div>
-   <div class="index-entry-footer">
-    <div class="entry-detail-link btn">
-      <p><a href="/entry/{{.DsKey.IntID}}">続きを読む</a><p>
-    </div>
    </div>
    <div class="clear"></div>
    <div class="entry-footer">

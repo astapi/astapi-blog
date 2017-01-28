@@ -35,7 +35,7 @@ func TagEntryList(w http.ResponseWriter, r *http.Request) {
 	}
 
 	tagEntryPage := TagEntryPage{
-		Title:   tag + " - あすたぴのブログ",
+		Title:   tag + " - One By One",
 		Entries: es,
 	}
 
