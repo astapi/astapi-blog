@@ -18,6 +18,11 @@ type Indexa struct {
 	Entries []Entry
 }
 
+var funcMap = template.FuncMap{
+	"safe": func(text string) template.HTML { return template.HTML(text) },
+}
+var indexTemp = template.Must(template.New("index.html").Funcs(funcMap).ParseFiles("templates/index.html", "templates/entry.html", "templates/entry_footer.html", "templates/header.html"))
+
 func Index(w http.ResponseWriter, r *http.Request) {
 	ctx := appengine.NewContext(r)
 	query := ds.NewQuery("Entry")
@@ -28,9 +33,8 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), 500)
 	}
 
-	var es []Entry
+	es := make([]Entry, 0, len(entries))
 	for i := 0; len(entries) > i; i++ {
-		//	entries[i].ToHtml()
 		es = append(es, Entry{
 			Entry: entries[i],
 			DsKey: keys[i],
@@ -41,14 +45,8 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		Title:   "One By One",
 		Entries: es,
 	}
-
-	funcMap := template.FuncMap{
-		"safe": func(text string) template.HTML { return template.HTML(text) },
-	}
-
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	t := template.Must(template.New("index.html").Funcs(funcMap).ParseFiles("templates/index.html", "templates/entry.html", "templates/entry_footer.html", "templates/header.html"))
-	if err := t.ExecuteTemplate(w, "all", index); err != nil {
+	if err := indexTemp.ExecuteTemplate(w, "all", index); err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}

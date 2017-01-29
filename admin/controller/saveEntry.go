@@ -18,9 +18,6 @@ func (e *NotFound) Error() string {
 }
 
 func tags2Array(tags string) []string {
-	if tags == "" {
-		return make([]string, 0)
-	}
 	ret := strings.Split(tags, ",")
 	return ret
 }
