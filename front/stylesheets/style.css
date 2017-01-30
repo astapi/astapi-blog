@@ -1,173 +1,56 @@
-.color-primary-0 { color: #ECECEC } /* Main Primary color */
-.color-primary-1 { color: #FFFFFF }
-.color-primary-2 { color: #FFFFFF }
-.color-primary-3 { color: #8F9192 }
-.color-primary-4 { color: #8F9192 }
+@charset "UTF-8";
+* { box-sizing: border-box; }
 
-.color-secondary-1-0 { color: #F6F6F6 } /* Main Secondary color (1) */
-.color-secondary-1-1 { color: #FFFFFF }
-.color-secondary-1-2 { color: #FFFFFF }
-.color-secondary-1-3 { color: #BCC0BC }
-.color-secondary-1-4 { color: #BCC0BC }
+.fa-2 { font-size: 1.5em; }
 
-.color-secondary-2-0 { color: #F0F0F0 } /* Main Secondary color (2) */
-.color-secondary-2-1 { color: #FFFFFF }
-.color-secondary-2-2 { color: #FFFFFF }
-.color-secondary-2-3 { color: #A0A0A3 }
-.color-secondary-2-4 { color: #A0A0A3 }
+body { margin: 0; font-family: Montserrat, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif; }
 
-* {
-  box-sizing: border-box;
-}
+h1 { margin: 0; }
 
-.fa-2 {
-  font-size: 1.5em;
-}
+.clear { clear: left; }
 
-body {
-  margin: 0;
-  font-family: Montserrat, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
-}
+header { margin-bottom: 30px; }
+header .menu { display: none; }
+header h1 { color: #8F9192; margin-top: 20px; text-align: center; margin-bottom: 50px; }
+header h1 a:visited { color: #8F9192; text-decoration: none; }
+header a { text-decoration: none; color: #8F9192; }
 
-h1 {
-  margin: 0;
-}
+.menu-border { border-left: 1px solid #A0A0A3; border-right: 1px solid #A0A0A3; padding: 0 10px; }
 
-.clear {
-  clear: left;
-}
+.main-content { width: 90%; margin: 0 auto; }
 
-header {
-  margin-bottom: 30px;
-}
+.entry-title h2 { margin-top: 0; margin-bottom: 0; }
 
-header .menu {
-  display: none;
-}
+.entry { width: 80%; margin-left: 10%; }
 
-header h1 {
-  color: #8F9192;
-  margin-top: 20px;
-  text-align: center;
-  margin-bottom: 50px;
-}
+.entry a { text-decoration: none; color: #8F9192; }
 
-header a {
-  text-decoration: none;
-  color: #8F9192;
-}
+.entry-date { font-size: 0.9em; }
 
-header h1 a:visited {
-  color: #8F9192;
-  text-decoration: none;
-}
+.entry-tags { overflow: hidden; }
 
-.menu-border {
-  border-left: 1px solid #A0A0A3;
-  border-right: 1px solid #A0A0A3;
-  padding: 0 10px;
-}
+.entry-tags i { float: left; margin-top: 7px; margin-left: 7px; }
 
-.main-content {
-  width: 90%;
-  margin: 0 auto;
-}
+.entry-tags ul { margin: 0; padding: 0; list-style-type: none; float: left; }
 
-.entry-title h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+.entry-tags li { float: left; margin: 5px 10px; padding: 5px 10px; }
 
-.entry {
-  width: 80%;
-  margin-left: 10%;
-}
+.entry-tags a { text-decoration: none; color: white; }
 
-.entry a {
-  text-decoration: none;
-  color: #5f5f5f;
-  color: #BCC0BC;
-  color: #8F9192;
-}
+.tag { color: white; background-color: #26D4CE; background-color: #BABEBA; border-radius: 5px; }
 
-.entry-date {
-  font-size: 0.9em;
-}
+.entry-body { margin: 20px 20px; clear: left; }
 
-.entry-tags {
-  overflow: hidden;
-}
+.entry-footer { margin: 0px 20px; }
 
-.entry-tags i {
-  float: left;
-  margin-top: 7px;
-  margin-left: 7px;
-}
+.footer p { color: #8F9192; text-align: center; }
 
-.entry-tags ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  float: left;
-}
+.fa-tag { margin-right: 3px; }
 
-.entry-tags li {
-  float: left;
-  margin: 5px 10px;
-  padding: 5px 10px;
-}
+.cf:before, .cf:after { content: " "; display: table; }
 
-.entry-tags a {
-  text-decoration: none;
-  color: white;
-}
+.cf:after { clear: both; }
 
-.tag {
-  color: white;
-  background-color: #26D4CE;
-  background-color: #BABEBA;
-  border-radius: 5px;
-}
+.cf { *zoom: 1; }
 
-.entry-body {
-  margin: 20px 20px;
-  clear: left;
-}
-
-.entry-footer {
-  margin: 0px 20px;
-}
-
-.sidebar {
-  padding-top: 100px;
-  margin-right: 5px;
-  float: left;
-  width: 19%;
-}
-
-.profile-info {
-  border-bottom: 1px solid #5f5f5f;
-}
-
-.footer p {
-  color: #8F9192;
-  text-align: center;
-}
-
-.fa-tag {
-  margin-right: 3px;
-}
-
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
-}
-
-.cf:after {
-    clear: both;
-}
-
-.cf {
-    *zoom: 1;
-}
+/*# sourceMappingURL=style.css.map */

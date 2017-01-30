@@ -1,0 +1,51 @@
+header
+  .menu
+    width: 10%
+    height: 50px
+    margin: 0 auto
+    display: block
+    ul
+      text-align: center
+      padding-left: 0
+      li
+        list-style-type: none
+  .menu-list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    -webkit-justify-content: space-between
+    justify-content: space-between
+
+.main-content
+  width: 80%
+
+.entry-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  -webkit-justify-content: space-between
+  justify-content: space-between
+  padding: 0
+
+.entry
+  list-style-type: none
+  background-color: #FFFFFF
+  margin-bottom: 40px
+  width: 45%
+  height: 250px
+  margin-left: 0
+  padding: 10px
+  box-shadow: 4px 4px 0 #efebe6
+  border: 1px solid #F0F0F0
+  &:active
+    position: relative
+    top: 7px
+    box-shadow: none
+
+.entry-body
+  height: 400px
+  overflow: hidden
+  text-overflow: ellipsis
+
+.entry-footer
+  display: none
